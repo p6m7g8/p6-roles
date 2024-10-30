@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`myStack Snapshot Test should match the synthesized CloudFormation template snapshot 1`] = `
+{
+  "Mappings": {
+    "AWSCloudFrontPartitionHostedZoneIdMap": {
+      "aws": {
+        "zoneId": "Z2FDTNDATAQYW2",
+      },
+      "aws-cn": {
+        "zoneId": "Z3RFFRIM2A3IF5",
+      },
+    },
+  },
+  "Parameters": {
+    "BootstrapVersion": {
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
+      "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": {
+    "p6m7g8orgCloudfrontDnsRecord3DF50A73": {
+      "Properties": {
+        "AliasTarget": {
+          "DNSName": {
+            "Fn::GetAtt": [
+              "p6m7g8orgDistributionB3F378E3",
+              "DomainName",
+            ],
+          },
+          "HostedZoneId": {
+            "Fn::FindInMap": [
+              "AWSCloudFrontPartitionHostedZoneIdMap",
+              {
+                "Ref": "AWS::Partition",
+              },
+              "zoneId",
+            ],
+          },
+        },
+        "HostedZoneId": "DUMMY",
+        "Name": "www.p6m7g8.org.",
+        "Type": "A",
+      },
+      "Type": "AWS::Route53::RecordSet",
+    },
+    "p6m7g8orgDistributionB3F378E3": {
+      "Properties": {
+        "DistributionConfig": {
+          "Aliases": [
+            "www.p6m7g8.org",
+          ],
+          "DefaultCacheBehavior": {
+            "AllowedMethods": [
+              "GET",
+              "HEAD",
+              "OPTIONS",
+            ],
+            "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+            "Compress": true,
+            "TargetOriginId": "p6sitesp6m7g8orgDistributionOrigin16B3C11D3",
+            "ViewerProtocolPolicy": "allow-all",
+          },
+          "Enabled": true,
+          "HttpVersion": "http2",
+          "IPV6Enabled": true,
+          "Origins": [
+            {
+              "CustomOriginConfig": {
+                "OriginProtocolPolicy": "http-only",
+                "OriginSSLProtocols": [
+                  "TLSv1.2",
+                ],
+              },
+              "DomainName": {
+                "Fn::Select": [
+                  2,
+                  {
+                    "Fn::Split": [
+                      "/",
+                      {
+                        "Fn::GetAtt": [
+                          "p6m7g8orgMyBucket9D229790",
+                          "WebsiteURL",
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+              "Id": "p6sitesp6m7g8orgDistributionOrigin16B3C11D3",
+            },
+          ],
+          "ViewerCertificate": {
+            "AcmCertificateArn": {
+              "Ref": "p6m7g8orgWWWCertificateBBDD2C03",
+            },
+            "MinimumProtocolVersion": "TLSv1.2_2021",
+            "SslSupportMethod": "sni-only",
+          },
+        },
+      },
+      "Type": "AWS::CloudFront::Distribution",
+    },
+    "p6m7g8orgMyBucket9D229790": {
+      "DeletionPolicy": "Delete",
+      "Properties": {
+        "AccessControl": "BucketOwnerFullControl",
+        "CorsConfiguration": {
+          "CorsRules": [
+            {
+              "AllowedHeaders": [
+                "*",
+              ],
+              "AllowedMethods": [
+                "GET",
+                "PUT",
+              ],
+              "AllowedOrigins": [
+                "*",
+              ],
+              "MaxAge": 3000,
+            },
+          ],
+        },
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "IgnorePublicAcls": true,
+        },
+        "WebsiteConfiguration": {
+          "IndexDocument": "index.html",
+        },
+      },
+      "Type": "AWS::S3::Bucket",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "p6m7g8orgMyBucketPolicyEFE25436": {
+      "Properties": {
+        "Bucket": {
+          "Ref": "p6m7g8orgMyBucket9D229790",
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": "*",
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "p6m7g8orgMyBucket9D229790",
+                        "Arn",
+                      ],
+                    },
+                    "/*",
+                  ],
+                ],
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+      },
+      "Type": "AWS::S3::BucketPolicy",
+    },
+    "p6m7g8orgOAI2F0DBA21": {
+      "Properties": {
+        "CloudFrontOriginAccessIdentityConfig": {
+          "Comment": "Allows CloudFront to reach the bucket",
+        },
+      },
+      "Type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
+    },
+    "p6m7g8orgWWWCertificateBBDD2C03": {
+      "Properties": {
+        "DomainName": "www.p6m7g8.org",
+        "DomainValidationOptions": [
+          {
+            "DomainName": "www.p6m7g8.org",
+            "ValidationDomain": "p6m7g8.org",
+          },
+        ],
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "p6-sites/p6m7g8.org/WWW-Certificate",
+          },
+        ],
+        "ValidationMethod": "EMAIL",
+      },
+      "Type": "AWS::CertificateManager::Certificate",
+    },
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                  ],
+                  {
+                    "Ref": "BootstrapVersion",
+                  },
+                ],
+              },
+            ],
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.",
+        },
+      ],
+    },
+  },
+}
+`;
