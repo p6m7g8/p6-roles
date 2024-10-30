@@ -5,6 +5,15 @@
   "[dotenv]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -13,9 +22,7 @@
   },
   "eslint.validate": [
     "javascript",
-    "javascriptreact",
     "typescript",
-    "typescriptreact",
     "markdown",
     "json",
     "jsonc",
@@ -27,13 +34,7 @@
   "typescript.format.enable": false,
   "jest.runMode": "on-demand",
   "editor.tabSize": 2,
-  "files.exclude": {
-    "node_modules": true,
-    "dist": true,
-    ".cache": true
-  },
   "files.associations": {
-    "*.test.tsx": "typescriptreact",
     "*.test.ts": "typescript"
   },
   "typescript.suggest.autoImports": true,
@@ -46,4 +47,5 @@
   "cSpell.words": [
     "continuouslearning"
   ]
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }

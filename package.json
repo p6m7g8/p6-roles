@@ -1,10 +1,16 @@
 {
+<<<<<<< HEAD
   "name": "p6-sites",
   "description": "P6: Creates P6 CDK Website Plus for domains",
   "repository": {
     "type": "git",
     "url": "https://github.com/p6m7g8/p6-sites"
   },
+=======
+  "name": "p6-template-cdk-eslint-pnpm-ts-flatfile",
+  "version": "0.1.0",
+  "bin": "src/main.ts",
+>>>>>>> 21624bb (Initial commit)
   "scripts": {
     "build": "pnpm run lint && pnpm run test && pnpm run cdk synth",
     "diff": "pnpm run build && pnpm run cdk diff",
@@ -12,6 +18,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "cdk": "cdk",
+<<<<<<< HEAD
     "test": "node --trace-deprecation ./node_modules/jest/bin/jest.js  --config jest.config.js --coverage --passWithNoTests --updateSnapshot",
     "test:watch": "node --trace-deprecation ./node_modules/jest/bin/jest.js  --config jest.config.js --watch --coverage"
   },
@@ -25,6 +32,14 @@
     "@antfu/eslint-config": "^3.8.0",
     "@types/jest": "^29.5.14",
     "@types/js-yaml": "^4.0.9",
+=======
+    "test": "node --trace-deprecation ./node_modules/jest/bin/jest.js  --config jest.config.js --coverage",
+    "test:watch": "node --trace-deprecation ./node_modules/jest/bin/jest.js  --config jest.config.js --watch --coverage"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.8.0",
+    "@types/jest": "^29.5.14",
+>>>>>>> 21624bb (Initial commit)
     "@types/node": "22.8.4",
     "@typescript-eslint/eslint-plugin": "^8.12.2",
     "@typescript-eslint/parser": "^8.12.2",
@@ -39,6 +54,7 @@
   "dependencies": {
     "aws-cdk-lib": "2.164.1",
     "constructs": "^10.4.2",
+<<<<<<< HEAD
     "js-yaml": "^4.1.0",
     "p6-cdk-website-plus": "^1.0.0",
     "source-map-support": "^0.5.21"
@@ -56,5 +72,9 @@
   ],
   "license": "Apache-2.0",
   "version": "0.0.0",
+=======
+    "source-map-support": "^0.5.21"
+  },
+>>>>>>> 21624bb (Initial commit)
   "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
 }

@@ -1,4 +1,5 @@
 import type { Construct } from 'constructs'
+<<<<<<< HEAD
 import type { IP6CDKWebsiteProps } from 'p6-cdk-website-plus'
 import * as fs from 'node:fs'
 import * as process from 'node:process'
@@ -48,6 +49,14 @@ export class MyStack extends cdk.Stack {
     super(scope, id, props)
 
     new P6CDKWebsitePlus(this, props.site.hostedZoneName, props.site)
+=======
+import * as process from 'node:process'
+import * as cdk from 'aws-cdk-lib'
+
+export class MyStack extends cdk.Stack {
+  constructor(scope: Construct, id: string, props: cdk.StackProps = {}) {
+    super(scope, id, props)
+>>>>>>> 21624bb (Initial commit)
   }
 }
 
@@ -59,10 +68,14 @@ const theEnv = {
 
 // create the app and stack
 const app = new cdk.App()
+<<<<<<< HEAD
 const domains: IP6CDKWebsiteProps[] = parseYamlFile(CONFIG_FILE)
 domains.forEach((domain) => {
   const stackName = `p6-site-${domain.hostedZoneName.replace(/\./g, '-')}`
 
   new MyStack(app, stackName, { site: domain, env: theEnv })
 })
+=======
+new MyStack(app, 'p6-template-cdk-eslint-pnpm-ts-flatfile', { env: theEnv })
+>>>>>>> 21624bb (Initial commit)
 app.synth()

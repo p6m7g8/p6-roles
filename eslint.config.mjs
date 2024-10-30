@@ -2,12 +2,12 @@ import antfu from '@antfu/eslint-config'
 
 export default antfu({
   ignores: [
-    '.github',
-    '.mergify.yml',
+    '.github/',
     '.pnpm-store/',
-    '.vscode/settings.json',
+    '.vscode/',
     '*.md',
     'cdk.json',
+    '.mergify.yml',
     'package.json',
     'tsconfig.json',
   ],
