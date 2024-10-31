@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`myStack Snapshot Test should match the synthesized CloudFormation template snapshot 1`] = `
+{
+  "Parameters": {
+    "BootstrapVersion": {
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
+      "Type": "AWS::SSM::Parameter::Value<String>",
+    },
+  },
+  "Resources": {
+    "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderHandlerF2C543E0": {
+      "DependsOn": [
+        "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderRole517FED65",
+      ],
+      "Properties": {
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-346733622331-us-east-1",
+          "S3Key": "977fc1649d2dbcce16e23f6332faef6fa0f48aa74a0afe35f4a3467754e20cd8.zip",
+        },
+        "Handler": "__entrypoint__.handler",
+        "MemorySize": 128,
+        "Role": {
+          "Fn::GetAtt": [
+            "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderRole517FED65",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs20.x",
+        "Timeout": 900,
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderRole517FED65": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Sub": "arn:\${AWS::Partition}:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+          },
+        ],
+        "Policies": [
+          {
+            "PolicyDocument": {
+              "Statement": [
+                {
+                  "Action": [
+                    "iam:CreateOpenIDConnectProvider",
+                    "iam:DeleteOpenIDConnectProvider",
+                    "iam:UpdateOpenIDConnectProviderThumbprint",
+                    "iam:AddClientIDToOpenIDConnectProvider",
+                    "iam:RemoveClientIDFromOpenIDConnectProvider",
+                  ],
+                  "Effect": "Allow",
+                  "Resource": "*",
+                },
+              ],
+              "Version": "2012-10-17",
+            },
+            "PolicyName": "Inline",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "P6CDKGithubOidcProviderGithubOidcA92652E6": {
+      "DeletionPolicy": "Delete",
+      "Properties": {
+        "ClientIDList": [
+          "sts.amazonaws.com",
+        ],
+        "CodeHash": "977fc1649d2dbcce16e23f6332faef6fa0f48aa74a0afe35f4a3467754e20cd8",
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderHandlerF2C543E0",
+            "Arn",
+          ],
+        },
+        "ThumbprintList": [
+          "ffffffffffffffffffffffffffffffffffffffff",
+        ],
+        "Url": "https://token.actions.githubusercontent.com",
+      },
+      "Type": "Custom::AWSCDKOpenIdConnectProvider",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "P6CDKGithubOidcProviderGithubOidcRole2FB797ED": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRoleWithWebIdentity",
+              "Condition": {
+                "StringEquals": {
+                  "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
+                },
+                "StringLike": {
+                  "token.actions.githubusercontent.com:sub": "repo:p6m7g8/p6m7g8.com:*",
+                },
+              },
+              "Effect": "Allow",
+              "Principal": {
+                "Federated": {
+                  "Ref": "P6CDKGithubOidcProviderGithubOidcA92652E6",
+                },
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+      },
+      "Type": "AWS::IAM::Role",
+    },
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                  ],
+                  {
+                    "Ref": "BootstrapVersion",
+                  },
+                ],
+              },
+            ],
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI.",
+        },
+      ],
+    },
+  },
+}
+`;
