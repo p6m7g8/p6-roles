@@ -1,6 +1,6 @@
 {
-  "name": "p6-sites",
-  "description": "P6: Creates P6 CDK Website Plus for domains",
+  "name": "p6-roles",
+  "description": "P6: Creates Roles",
   "repository": {
     "type": "git",
     "url": "https://github.com/p6m7g8/p6-sites"

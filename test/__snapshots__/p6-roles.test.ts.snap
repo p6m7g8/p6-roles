@@ -120,6 +120,32 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
           ],
           "Version": "2012-10-17",
         },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AmazonS3FullAccess",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/CloudFrontFullAccess",
+              ],
+            ],
+          },
+        ],
       },
       "Type": "AWS::IAM::Role",
     },
