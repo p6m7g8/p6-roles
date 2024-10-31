@@ -2,6 +2,7 @@ import type { IP6CDKGithubOidcProviderProps } from 'p6-cdk-github-oidc-provider'
 import * as process from 'node:process'
 import * as cdk from 'aws-cdk-lib'
 import { Template } from 'aws-cdk-lib/assertions'
+import * as iam from 'aws-cdk-lib/aws-iam'
 import { MyStack } from '../src/main'
 
 describe('myStack Snapshot Test', () => {
@@ -15,10 +16,14 @@ describe('myStack Snapshot Test', () => {
 
     const site: IP6CDKGithubOidcProviderProps = {
       repo: 'p6m7g8.org',
+      policies: [
+        iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonS3FullAccess'),
+        iam.ManagedPolicy.fromAwsManagedPolicyName('CloudFrontFullAccess'),
+      ],
     }
 
     // Create the stack
-    const stack = new MyStack(app, 'p6-sites', { ...site, env })
+    const stack = new MyStack(app, 'p6-roles', { ...site, env })
 
     // Prepare the stack template for assertions
     const template = Template.fromStack(stack)

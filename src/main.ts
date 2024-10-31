@@ -12,7 +12,7 @@ export class MyStack extends cdk.Stack {
     const githubOidcProvider: IP6CDKGithubOidcProviderProps = {
       repo: 'p6m7g8/p6m7g8.com',
       policies: [
-        iam.ManagedPolicy.fromAwsManagedPolicyName('S3FullAccess'),
+        iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonS3FullAccess'),
         iam.ManagedPolicy.fromAwsManagedPolicyName('CloudFrontFullAccess'),
       ],
     }
