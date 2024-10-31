@@ -17,9 +17,12 @@ importers:
       js-yaml:
         specifier: ^4.1.0
         version: 4.1.0
+      p6-cdk-gha-role:
+        specifier: ^0.1.0
+        version: 0.1.0(aws-cdk-lib@2.164.1(constructs@10.4.2))(constructs@10.4.2)
       p6-cdk-github-oidc-provider:
-        specifier: ^0.2.0
-        version: 0.2.0(aws-cdk-lib@2.164.1(constructs@10.4.2))(constructs@10.4.2)
+        specifier: ^0.4.0
+        version: 0.4.0(aws-cdk-lib@2.164.1(constructs@10.4.2))(constructs@10.4.2)
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -2150,8 +2153,14 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  p6-cdk-github-oidc-provider@0.2.0:
-    resolution: {integrity: sha512-+E7Jn3Dfru/a8xpHee3ZxuR40e0apqpubTJ9/v/kTyPYsl55OEOKyrbNYUjyJYSyjWPUVg7fUkfgbEkbWXaYwg==}
+  p6-cdk-gha-role@0.1.0:
+    resolution: {integrity: sha512-47F3rXeHSm8Ryw0V99No6VkHjHEM+anObTwPEvAB42GqRQVQajKFpAuweYIu08SnssDOgHACAYNOTFNgmNi7wA==}
+    peerDependencies:
+      aws-cdk-lib: 2.164.1
+      constructs: ^10.4.2
+
+  p6-cdk-github-oidc-provider@0.4.0:
+    resolution: {integrity: sha512-amLCvf+Sen4StmYVyxYD6EFZdPpffuz2gvfWtmEiUaztt8vDeBLxSBpw7Bno02UArLQoxY3Sh2UVeK3CGdUjGQ==}
     peerDependencies:
       aws-cdk-lib: 2.164.1
       constructs: ^10.4.2
@@ -5458,7 +5467,12 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  p6-cdk-github-oidc-provider@0.2.0(aws-cdk-lib@2.164.1(constructs@10.4.2))(constructs@10.4.2):
+  p6-cdk-gha-role@0.1.0(aws-cdk-lib@2.164.1(constructs@10.4.2))(constructs@10.4.2):
+    dependencies:
+      aws-cdk-lib: 2.164.1(constructs@10.4.2)
+      constructs: 10.4.2
+
+  p6-cdk-github-oidc-provider@0.4.0(aws-cdk-lib@2.164.1(constructs@10.4.2))(constructs@10.4.2):
     dependencies:
       aws-cdk-lib: 2.164.1(constructs@10.4.2)
       constructs: 10.4.2
