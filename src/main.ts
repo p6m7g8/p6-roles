@@ -2,6 +2,7 @@ import type { Construct } from 'constructs'
 import type { IP6CDKGithubOidcProviderProps } from 'p6-cdk-github-oidc-provider'
 import * as process from 'node:process'
 import * as cdk from 'aws-cdk-lib'
+import * as iam from 'aws-cdk-lib/aws-iam'
 import { P6CDKGithubOidcProvider } from 'p6-cdk-github-oidc-provider'
 
 export class MyStack extends cdk.Stack {
@@ -10,6 +11,10 @@ export class MyStack extends cdk.Stack {
 
     const githubOidcProvider: IP6CDKGithubOidcProviderProps = {
       repo: 'p6m7g8/p6m7g8.com',
+      policies: [
+        iam.ManagedPolicy.fromAwsManagedPolicyName('S3FullAccess'),
+        iam.ManagedPolicy.fromAwsManagedPolicyName('CloudFrontFullAccess'),
+      ],
     }
 
     new P6CDKGithubOidcProvider(this, 'P6CDKGithubOidcProvider', {
