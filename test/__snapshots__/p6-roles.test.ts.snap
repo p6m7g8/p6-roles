@@ -137,6 +137,59 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
       },
       "Type": "AWS::IAM::Role",
     },
+    "p6rolesghap6rolesghaluckydoganimalrescuep6ldarbrandimagewebsiteroleroleghap6m7g8p6roles58D35618": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRoleWithWebIdentity",
+              "Condition": {
+                "StringEquals": {
+                  "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
+                },
+                "StringLike": {
+                  "token.actions.githubusercontent.com:sub": "repo:luckydoganimalrescue/p6-ldar-brand-image-website:*",
+                },
+              },
+              "Effect": "Allow",
+              "Principal": {
+                "Federated": {
+                  "Ref": "P6CDKGithubOidcProviderGithubOidcA92652E6",
+                },
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AmazonS3FullAccess",
+              ],
+            ],
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/CloudFrontFullAccess",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
     "p6rolesghap6rolesghap6m7g8p6cdkgharoleroleroleghap6m7g8p6roles5C908850": {
       "Properties": {
         "AssumeRolePolicyDocument": {

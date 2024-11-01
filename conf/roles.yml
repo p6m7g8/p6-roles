@@ -53,3 +53,8 @@
   repo: luckydoganimalrescue/p6-ldar-brand-image-infra
   policies:
     - AdministratorAccess
+- name: p6-roles-gha-luckydoganimalrescue-p6-ldar-brand-image-website-role
+  repo: luckydoganimalrescue/p6-ldar-brand-image-website
+  policies:
+    - AmazonS3FullAccess
+    - CloudFrontFullAccess
