@@ -219,6 +219,47 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
       },
       "Type": "AWS::IAM::Role",
     },
+    "p6rolesghap6rolesghap6m7g8p6cdks3protectorroleroleghap6m7g8p6rolesF4606507": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRoleWithWebIdentity",
+              "Condition": {
+                "StringEquals": {
+                  "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
+                },
+                "StringLike": {
+                  "token.actions.githubusercontent.com:sub": "repo:p6m7g8/p6-cdk-s3-protector:*",
+                },
+              },
+              "Effect": "Allow",
+              "Principal": {
+                "Federated": {
+                  "Ref": "P6CDKGithubOidcProviderGithubOidcA92652E6",
+                },
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AdministratorAccess",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
     "p6rolesghap6rolesghap6m7g8p6cdkwebsiteplusroleroleghap6m7g8p6roles76CDAE8D": {
       "Properties": {
         "AssumeRolePolicyDocument": {
