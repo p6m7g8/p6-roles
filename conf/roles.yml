@@ -41,3 +41,7 @@
   repo: luckydoganimalrescue/p6-ldar-brand-image
   policies:
     - AdministratorAccess
+- name: p6-roles-gha-p6m7g8-p6-cdk-s3-protector-role
+  repo: p6m7g8/p6-cdk-s3-protector
+  policies:
+    - AdministratorAccess
