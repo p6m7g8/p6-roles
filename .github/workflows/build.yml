@@ -32,8 +32,7 @@ jobs:
             corepack --version
             echo $PATH
             ls -alFh /opt
-            ls -alFh /opt/acttoolcache
-            ls -alFh /opt/hostedtoolcache
+            ls -alFh /opt/hostedtoolcache/node
       - name: Restore NPM node_modules
         uses: actions/cache/restore@v4.1.2
         with:
