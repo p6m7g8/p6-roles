@@ -45,5 +45,5 @@ const env = {
 
 // create the app and stack
 const app = new cdk.App()
-new MyStack(app, 'p6-roles', { env })
+new MyStack(app, 'p6-roles-github-oidc-provider', { env })
 app.synth()
