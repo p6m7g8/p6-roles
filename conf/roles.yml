@@ -45,3 +45,7 @@
   repo: p6m7g8/p6-cdk-s3-protector
   policies:
     - AdministratorAccess
+- name: p6-roles-gha-p6m7g8-p6-cdk-vpc-igw-protector-role
+  repo: p6m7g8/p6-cdk-vpc-igw-protector
+  policies:
+    - AdministratorAccess
