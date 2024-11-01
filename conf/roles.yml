@@ -1,0 +1,35 @@
+---
+- name: p6-roles-gha-p6m7g8-p6-roles-role
+  repo: p6m7g8/p6-roles
+  policies:
+    - AdministratorAccess
+- name: p6-roles-gha-p6m7g8-p6-cdk-website-plus-role
+  repo: p6m7g8/p6-cdk-website-plus
+  policies:
+    - AdministratorAccess
+- name: p6-roles-gha-p6m7g8-p6-domains-role
+  repo: p6m7g8/p6-domains
+  policies:
+    - AdministratorAccess
+- name: p6-roles-gha-p6m7g8-p6-domain-records-role
+  repo: p6m7g8/p6-domain-records
+  policies:
+    - AdministratorAccess
+- name: p6-roles-gha-p6m7g8-p6-sites-role
+  repo: p6m7g8/p6-sites
+  policies:
+    - AdministratorAccess
+- name: p6-roles-gha-p6m7g8-p6m7g8-com-role
+  repo: p6m7g8/p6m7g8.com
+  policies:
+    - AmazonS3FullAccess
+    - CloudFrontFullAccess
+- name: p6-roles-gha-pgollucci-gollucci-com-role
+  repo: pgollucci/gollucci.com
+  policies:
+    - AmazonS3FullAccess
+    - CloudFrontFullAccess
+- name: p6-roles-gha-luckydoganimalrescue-p6-ldar-brand-image-role
+  repo: luckydoganimalrescue/p6-ldar-brand-image
+  policies:
+    - AdministratorAccess

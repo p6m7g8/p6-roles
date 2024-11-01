@@ -1,61 +1,38 @@
 import type { Construct } from 'constructs'
+import * as fs from 'node:fs'
 import * as process from 'node:process'
 import * as cdk from 'aws-cdk-lib'
 import * as iam from 'aws-cdk-lib/aws-iam'
+
+import * as yaml from 'js-yaml'
 import { P6CDKGHARole } from 'p6-cdk-gha-role'
 import { P6CDKGithubOidcProvider } from 'p6-cdk-github-oidc-provider'
 
+const CONFIG_FILE = 'conf/roles.yml'
+
+/**
+ *
+ * @param filePath
+ * @returns yamlData
+ */
+function parseYamlFile(filePath: string): any[] {
+  const fileContents = fs.readFileSync(filePath, 'utf8')
+  const yamlData = yaml.load(fileContents) as any[]
+  return yamlData
+}
 export class MyStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props: cdk.StackProps) {
     super(scope, id, props)
 
     const githubOidcProvider = new P6CDKGithubOidcProvider(this, 'P6CDKGithubOidcProvider')
-    new P6CDKGHARole(this, 'p6-roles-gha-p6m7g8-p6-roles-role', {
-      principle: githubOidcProvider.openIdConnectProviderArn,
-      repo: 'p6m7g8/p6-roles',
-      policies: [iam.ManagedPolicy.fromAwsManagedPolicyName('AdministratorAccess')],
-    })
 
-    new P6CDKGHARole(this, 'p6-roles-gha-p6m7g8-p6-cdk-website-plus-role', {
-      principle: githubOidcProvider.openIdConnectProviderArn,
-      repo: 'p6m7g8/p6-cdk-website-plus',
-      policies: [iam.ManagedPolicy.fromAwsManagedPolicyName('AdministratorAccess')],
-    })
-
-    new P6CDKGHARole(this, 'p6-roles-gha-p6m7g8-p6-sites-role', {
-      principle: githubOidcProvider.openIdConnectProviderArn,
-      repo: 'p6m7g8/p6-sites',
-      policies: [iam.ManagedPolicy.fromAwsManagedPolicyName('AdministratorAccess')],
-    })
-
-    new P6CDKGHARole(this, 'p6-roles-gha-p6m7g8-p6-domain-records-role', {
-      principle: githubOidcProvider.openIdConnectProviderArn,
-      repo: 'p6m7g8/p6-domain-records',
-      policies: [iam.ManagedPolicy.fromAwsManagedPolicyName('AdministratorAccess')],
-    })
-
-    new P6CDKGHARole(this, 'p6-roles-gha-p6m7g8-p6-domains-role', {
-      principle: githubOidcProvider.openIdConnectProviderArn,
-      repo: 'p6m7g8/p6-domains',
-      policies: [iam.ManagedPolicy.fromAwsManagedPolicyName('AdministratorAccess')],
-    })
-
-    new P6CDKGHARole(this, 'p6-roles-gha-p6m7g8-p6m7g8-com-role', {
-      principle: githubOidcProvider.openIdConnectProviderArn,
-      repo: 'p6m7g8/p6m7g8.com',
-      policies: [
-        iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonS3FullAccess'),
-        iam.ManagedPolicy.fromAwsManagedPolicyName('CloudFrontFullAccess'),
-      ],
-    })
-
-    new P6CDKGHARole(this, 'p6-roles-gha-pgollucci-gollucci-com-role', {
-      principle: githubOidcProvider.openIdConnectProviderArn,
-      repo: 'pgollucci/gollucci.com',
-      policies: [
-        iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonS3FullAccess'),
-        iam.ManagedPolicy.fromAwsManagedPolicyName('CloudFrontFullAccess'),
-      ],
+    const roles: any = parseYamlFile(CONFIG_FILE)
+    roles.forEach((role: any) => {
+      new P6CDKGHARole(this, `p6-roles-gha-${role.name}-role}`, {
+        principle: githubOidcProvider.openIdConnectProviderArn,
+        repo: role.repo,
+        policies: role.policies?.map((policyName: string) => iam.ManagedPolicy.fromAwsManagedPolicyName(policyName)),
+      })
     })
   }
 }
