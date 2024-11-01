@@ -57,6 +57,12 @@ export class MyStack extends cdk.Stack {
         iam.ManagedPolicy.fromAwsManagedPolicyName('CloudFrontFullAccess'),
       ],
     })
+
+    new P6CDKGHARole(this, 'p6-roles-gha-luckydoganimalrescue-p6-ldar-brand-image-role', {
+      principle: githubOidcProvider.openIdConnectProviderArn,
+      repo: 'luckydoganimalrescue/p6-ldar-brand-image',
+      policies: [iam.ManagedPolicy.fromAwsManagedPolicyName('AdministratorAccess')],
+    })
   }
 }
 
