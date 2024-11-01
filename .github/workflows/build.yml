@@ -15,8 +15,21 @@ jobs:
         uses: actions/checkout@v4.2.2
       - name: Install Node.js
         run: |
-          curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
-          sudo apt-get install -y nodejs
+          curl -fsSL https://nodejs.org/dist/v22.10.0/node-v22.10.0-linux-x64.tar.xz -o node-v22.10.0-linux-x64.tar.xz
+          sudo tar -xJf node-v22.10.0-linux-x64.tar.xz -C /usr/local
+          echo "/usr/local/node-v22.10.0-linux-x64/bin" >> $GITHUB_PATH
+      - name: Restore NPM node_modules
+        uses: actions/cache/restore@v4.1.2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
+      - name: Install pnpm and dependencies
+        run: |
+          sudo corepack enable
+          sudo corepack prepare pnpm@latest --activate
+          pnpm install
       - name: Check Node
         run: |
             set +e
@@ -31,20 +44,6 @@ jobs:
             pnpm --version
             corepack --version
             echo $PATH
-            ls -alFh /opt
-            ls -alFh /opt/hostedtoolcache/node
-      - name: Restore NPM node_modules
-        uses: actions/cache/restore@v4.1.2
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node_modules-${{ hashFiles('pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-node_modules-
-      - name: Install pnpm and dependencies
-        run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
-          pnpm install
       - name: Cache NPM dependencies
         uses: actions/cache@v4.1.2
         with:
