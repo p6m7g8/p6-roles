@@ -17,6 +17,22 @@ jobs:
         run: |
           curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
           sudo apt-get install -y nodejs
+      - name: Check Node
+        run: |
+            set +e
+            which node
+            which npm
+            which yarn
+            which pnpm
+            which corepack
+            node -v
+            npm -v
+            yarn --version
+            pnpm --version
+            corepack --version
+            echo $PATH
+            ls -alFh /opt
+            ls -alFh /opt/hostedtoolcache/node
       - name: Restore NPM node_modules
         uses: actions/cache/restore@v4.1.2
         with:
@@ -33,9 +49,9 @@ jobs:
         uses: actions/cache@v4.1.2
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-node_modules-
       - name: Assume role using OIDC
         uses: aws-actions/configure-aws-credentials@v4.0.2
         with:
