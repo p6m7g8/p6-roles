@@ -27,8 +27,6 @@ jobs:
             ${{ runner.os }}-node_modules-
       - name: Install pnpm and dependencies
         run: |
-          sudo corepack enable
-          sudo corepack prepare pnpm@latest --activate
           pnpm install
       - name: Check Node
         run: |
