@@ -96,7 +96,7 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
       "Type": "Custom::AWSCDKOpenIdConnectProvider",
       "UpdateReplacePolicy": "Delete",
     },
-    "p6rolesghap6rolesghaluckydoganimalrescuep6ldarbrandimageroleroleghap6m7g8p6roles6B4319FE": {
+    "p6rolesghap6rolesghaluckydoganimalrescuep6ldarbrandimageinfraroleroleghap6m7g8p6rolesC40BEE92": {
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -107,7 +107,7 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
                   "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
                 },
                 "StringLike": {
-                  "token.actions.githubusercontent.com:sub": "repo:luckydoganimalrescue/p6-ldar-brand-image:*",
+                  "token.actions.githubusercontent.com:sub": "repo:luckydoganimalrescue/p6-ldar-brand-image-infra:*",
                 },
               },
               "Effect": "Allow",
