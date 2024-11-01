@@ -49,3 +49,7 @@
   repo: p6m7g8/p6-cdk-vpc-igw-protector
   policies:
     - AdministratorAccess
+- name: p6-roles-gha-p6m7g8-p6-cdk-namer-role
+  repo: p6m7g8/p6-cdk-namer
+  policies:
+    - AdministratorAccess
