@@ -1,0 +1,30 @@
+[?1049h[>4;2m[?1h=[?2004h[?1004h[1;33r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[33;1H"/var/folders/05/yg7wm_m90r5f4kb48hfc_1180000gn/T//p6/transients/scratch_file/P5pU/file" 51L, 2168B[1;1Hfeat: p6-ldar-brand-image
+
+# p6_git_util_msg_collect(): lines below this marker will be ignored
+ M conf/roles.yml
+ M test/__snapshots__/p6-roles.test.ts.snap
+?? "p6-ldar-brand-image-infra\n\n"
+diff --git c/conf/roles.yml w/conf/roles.yml
+index 663cdee..65bca35 100644
+--- c/conf/roles.yml
++++ w/conf/roles.yml
+@@ -37,10 +37,6 @@
+   policies:[13;6H- AmazonS3FullAccess[14;6H- CloudFrontFullAccess
+-- name: p6-roles-gha-luckydoganimalrescue-p6-ldar-brand-image-role
+-  repo: luckydoganimalrescue/p6-ldar-brand-image
+-  policies:
+-    - AdministratorAccess
+ - name: p6-roles-gha-p6m7g8-p6-cdk-s3-protector-role
+   repo: p6m7g8/p6-cdk-s3-protector
+   policies:
+@@ -53,3 +49,7 @@
+   repo: p6m7g8/p6-cdk-namer
+   policies:[25;6H- AdministratorAccess
++- name: p6-roles-gha-luckydoganimalrescue-p6-ldar-brand-image-infra-role
++  repo: luckydoganimalrescue/p6-ldar-brand-image-infra
++  policies:
++    - AdministratorAccess
+diff --git c/test/__snapshots__/p6-roles.test.ts.snap w/test/__snapshots__/p6-roles.test.ts.snap
+index f70d755..dd6b5f3 100644
+--- c/test/__snapshots__/p6-roles.test.ts.snap[1;1H[?25h[?4m[?25l[33;1H[K[33;1H:[?25hwq![?25l[?2004l[>4;m"/private/var/folders/05/yg7wm_m90r5f4kb48hfc_1180000gn/T/p6/transients/scratch_file/P5pU/file" 51L, 2168B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?1049l[?25h[>4;m/var/folders/05/yg7wm_m90r5f4kb48hfc_1180000gn/T//p6/transients/scratch_file/P5pU/file
