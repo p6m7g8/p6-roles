@@ -29,8 +29,8 @@ jobs:
             ${{ runner.os }}-node_modules-
       - name: Install pnpm and dependencies
         run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
+          sudo corepack enable
+          sudo corepack prepare pnpm@latest --activate
           pnpm install
       - name: Cache NPM dependencies
         uses: actions/cache@v4.1.2
