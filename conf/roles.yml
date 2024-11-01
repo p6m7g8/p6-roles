@@ -7,6 +7,10 @@
   repo: p6m7g8/p6-cdk-github-oidc-provider
   policies:
     - AdministratorAccess
+- name: p6-roles-gha-p6m7g8-p6-cdk-gha-role-role
+  repo: p6m7g8/p6-cdk-gha-role
+  policies:
+    - AdministratorAccess
 - name: p6-roles-gha-p6m7g8-p6-cdk-website-plus-role
   repo: p6m7g8/p6-cdk-website-plus
   policies:
