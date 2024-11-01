@@ -96,7 +96,48 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
       "Type": "Custom::AWSCDKOpenIdConnectProvider",
       "UpdateReplacePolicy": "Delete",
     },
-    "p6rolesghap6m7g8p6cdkwebsiteplusroleghap6m7g8p6roles584F3C33": {
+    "p6rolesghap6rolesghaluckydoganimalrescuep6ldarbrandimageroleroleghap6m7g8p6roles6B4319FE": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRoleWithWebIdentity",
+              "Condition": {
+                "StringEquals": {
+                  "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
+                },
+                "StringLike": {
+                  "token.actions.githubusercontent.com:sub": "repo:luckydoganimalrescue/p6-ldar-brand-image:*",
+                },
+              },
+              "Effect": "Allow",
+              "Principal": {
+                "Federated": {
+                  "Ref": "P6CDKGithubOidcProviderGithubOidcA92652E6",
+                },
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AdministratorAccess",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "p6rolesghap6rolesghap6m7g8p6cdkwebsiteplusroleroleghap6m7g8p6roles76CDAE8D": {
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -137,7 +178,7 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
       },
       "Type": "AWS::IAM::Role",
     },
-    "p6rolesghap6m7g8p6domainrecordsroleghap6m7g8p6rolesA4027375": {
+    "p6rolesghap6rolesghap6m7g8p6domainrecordsroleroleghap6m7g8p6rolesBF44DFD7": {
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -178,7 +219,7 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
       },
       "Type": "AWS::IAM::Role",
     },
-    "p6rolesghap6m7g8p6domainsroleghap6m7g8p6roles3D632E4D": {
+    "p6rolesghap6rolesghap6m7g8p6domainsroleroleghap6m7g8p6rolesE8D7CD76": {
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -219,7 +260,7 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
       },
       "Type": "AWS::IAM::Role",
     },
-    "p6rolesghap6m7g8p6m7g8comroleghap6m7g8p6roles61AD64E4": {
+    "p6rolesghap6rolesghap6m7g8p6m7g8comroleroleghap6m7g8p6roles928BA8F0": {
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -272,7 +313,7 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
       },
       "Type": "AWS::IAM::Role",
     },
-    "p6rolesghap6m7g8p6rolesroleghap6m7g8p6roles03CEFEE0": {
+    "p6rolesghap6rolesghap6m7g8p6rolesroleroleghap6m7g8p6rolesF79882EE": {
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -313,7 +354,7 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
       },
       "Type": "AWS::IAM::Role",
     },
-    "p6rolesghap6m7g8p6sitesroleghap6m7g8p6roles7FCF8D45": {
+    "p6rolesghap6rolesghap6m7g8p6sitesroleroleghap6m7g8p6roles801B08C0": {
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
@@ -354,7 +395,7 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
       },
       "Type": "AWS::IAM::Role",
     },
-    "p6rolesghapgolluccigolluccicomroleghap6m7g8p6roles81AC9F99": {
+    "p6rolesghap6rolesghapgolluccigolluccicomroleroleghap6m7g8p6roles5A013E5B": {
       "Properties": {
         "AssumeRolePolicyDocument": {
           "Statement": [
