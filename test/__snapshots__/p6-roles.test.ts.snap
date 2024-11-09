@@ -17,7 +17,7 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-346733622331-us-east-1",
-          "S3Key": "977fc1649d2dbcce16e23f6332faef6fa0f48aa74a0afe35f4a3467754e20cd8.zip",
+          "S3Key": "2926656cdb97b26d98f8b957b0d3f7326b458679745f2817e50333a21767350c.zip",
         },
         "Handler": "__entrypoint__.handler",
         "MemorySize": 128,
@@ -81,7 +81,7 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
         "ClientIDList": [
           "sts.amazonaws.com",
         ],
-        "CodeHash": "977fc1649d2dbcce16e23f6332faef6fa0f48aa74a0afe35f4a3467754e20cd8",
+        "CodeHash": "2926656cdb97b26d98f8b957b0d3f7326b458679745f2817e50333a21767350c",
         "ServiceToken": {
           "Fn::GetAtt": [
             "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderHandlerF2C543E0",
@@ -325,6 +325,47 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
                 },
                 "StringLike": {
                   "token.actions.githubusercontent.com:sub": "repo:p6m7g8/p6-cdk-s3-protector:*",
+                },
+              },
+              "Effect": "Allow",
+              "Principal": {
+                "Federated": {
+                  "Ref": "P6CDKGithubOidcProviderGithubOidcA92652E6",
+                },
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AdministratorAccess",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "p6rolesghap6rolesghap6m7g8p6cdktfgithubmanagerroleroleghap6m7g8p6roles6DDD20FF": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRoleWithWebIdentity",
+              "Condition": {
+                "StringEquals": {
+                  "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
+                },
+                "StringLike": {
+                  "token.actions.githubusercontent.com:sub": "repo:p6m7g8/p6-cdktf-github-manager:*",
                 },
               },
               "Effect": "Allow",

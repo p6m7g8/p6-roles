@@ -58,3 +58,7 @@
   policies:
     - AmazonS3FullAccess
     - CloudFrontFullAccess
+- name: p6-roles-gha-p6m7g8-p6-cdktf-github-manager-role
+  repo: p6m7g8/p6-cdktf-github-manager
+  policies:
+    - AdministratorAccess
