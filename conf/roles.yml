@@ -62,3 +62,7 @@
   repo: p6m7g8/p6-cdktf-github-manager
   policies:
     - AdministratorAccess
+- name: p6-roles-gha-p6m7g8-p6-lz-role
+  repo: p6m7g8/p6-lz
+  policies:
+    - AdministratorAccess
