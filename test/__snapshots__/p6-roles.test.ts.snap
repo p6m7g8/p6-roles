@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`myStack Snapshot Test should match the synthesized CloudFormation template snapshot 1`] = `
 {
@@ -17,7 +17,7 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-346733622331-us-east-1",
-          "S3Key": "2926656cdb97b26d98f8b957b0d3f7326b458679745f2817e50333a21767350c.zip",
+          "S3Key": "62fa02efcaa700e1c247e1d3cc2aa0cd07a0808a9a3e3d2230e51f57a02233fb.zip",
         },
         "Handler": "__entrypoint__.handler",
         "MemorySize": 128,
@@ -27,7 +27,7 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
             "Arn",
           ],
         },
-        "Runtime": "nodejs20.x",
+        "Runtime": "nodejs22.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
@@ -81,7 +81,8 @@ exports[`myStack Snapshot Test should match the synthesized CloudFormation templ
         "ClientIDList": [
           "sts.amazonaws.com",
         ],
-        "CodeHash": "2926656cdb97b26d98f8b957b0d3f7326b458679745f2817e50333a21767350c",
+        "CodeHash": "62fa02efcaa700e1c247e1d3cc2aa0cd07a0808a9a3e3d2230e51f57a02233fb",
+        "RejectUnauthorized": false,
         "ServiceToken": {
           "Fn::GetAtt": [
             "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderHandlerF2C543E0",
