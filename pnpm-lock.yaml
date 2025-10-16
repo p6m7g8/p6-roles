@@ -18,11 +18,11 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       p6-cdk-gha-role:
-        specifier: ^0.1.6
-        version: 0.1.6(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2)
+        specifier: ^0.1.8
+        version: 0.1.8(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2)
       p6-cdk-github-oidc-provider:
-        specifier: ^0.4.6
-        version: 0.4.6(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2)
+        specifier: ^0.4.8
+        version: 0.4.8(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2)
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -1074,8 +1074,8 @@ packages:
     resolution: {integrity: sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ==}
     engines: {iojs: '>= 1.0.0', node: '>= 0.12.0'}
 
-  collect-v8-coverage@1.0.2:
-    resolution: {integrity: sha512-lHl4d5/ONEbLlJvaJNtsF/Lz+WvB07u2ycqTYbdrq7UypDXailES4valYb2eWiJFxZlVmpGekfqoxQhzyFdT4Q==}
+  collect-v8-coverage@1.0.3:
+    resolution: {integrity: sha512-1L5aqIkwPfiodaMgQunkF1zRhNqifHBmtbbbxcr6yVxxBnliw4TDOW6NxpO8DJLgJ16OT+Y4ztZqP6p/FtXnAw==}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -2436,15 +2436,15 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  p6-cdk-gha-role@0.1.6:
-    resolution: {integrity: sha512-8iZnHzntC8dqe2ZGOA19m8cpvFIwEg4FNgAhMNHHFC2/omBdefDqMXa387T+LiO07FwakG/WHgmwa5jIOSNYiA==}
+  p6-cdk-gha-role@0.1.8:
+    resolution: {integrity: sha512-ooEkRUzW1UDhKOq12PrI5g3CuWmmRfwlFBimezKmM3YaE4Pi5qBhupc1stjEVVQjU2osZyNrCW2Ige7xxKnYuw==}
     engines: {node: '>= 24.9.0'}
     peerDependencies:
       aws-cdk-lib: ^2.220.0
       constructs: ^10.4.2
 
-  p6-cdk-github-oidc-provider@0.4.6:
-    resolution: {integrity: sha512-dv0coMG8QFbZeLecvxHs/BKC1KPoO+mMbjcdI3gIapZ6RLFwfo09NZgL/7HnIJu8PKCq027Q17qVXJ4/NrFt+Q==}
+  p6-cdk-github-oidc-provider@0.4.8:
+    resolution: {integrity: sha512-MuAyNZBxOzU5V+CN9/RYZRdMWh8eE8aNnB0FSOMasYahyj7d7Rjv25SECqST3RANa3/F1/gDzqMEYJ+KRz567A==}
     engines: {node: '>= 24.9.0'}
     peerDependencies:
       aws-cdk-lib: ^2.220.0
@@ -3567,7 +3567,7 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.31
       '@types/node': 24.7.2
       chalk: 4.1.2
-      collect-v8-coverage: 1.0.2
+      collect-v8-coverage: 1.0.3
       exit-x: 0.2.2
       glob: 10.4.5
       graceful-fs: 4.2.11
@@ -3607,7 +3607,7 @@ snapshots:
       '@jest/console': 30.2.0
       '@jest/types': 30.2.0
       '@types/istanbul-lib-coverage': 2.0.6
-      collect-v8-coverage: 1.0.2
+      collect-v8-coverage: 1.0.3
 
   '@jest/test-sequencer@30.2.0':
     dependencies:
@@ -4257,7 +4257,7 @@ snapshots:
 
   co@4.6.0: {}
 
-  collect-v8-coverage@1.0.2: {}
+  collect-v8-coverage@1.0.3: {}
 
   color-convert@2.0.1:
     dependencies:
@@ -5449,7 +5449,7 @@ snapshots:
       '@types/node': 24.7.2
       chalk: 4.1.2
       cjs-module-lexer: 2.1.0
-      collect-v8-coverage: 1.0.2
+      collect-v8-coverage: 1.0.3
       glob: 10.4.5
       graceful-fs: 4.2.11
       jest-haste-map: 30.2.0
@@ -6086,12 +6086,12 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  p6-cdk-gha-role@0.1.6(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2):
+  p6-cdk-gha-role@0.1.8(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2):
     dependencies:
       aws-cdk-lib: 2.220.0(constructs@10.4.2)
       constructs: 10.4.2
 
-  p6-cdk-github-oidc-provider@0.4.6(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2):
+  p6-cdk-github-oidc-provider@0.4.8(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2):
     dependencies:
       aws-cdk-lib: 2.220.0(constructs@10.4.2)
       constructs: 10.4.2
