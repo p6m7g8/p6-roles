@@ -18,11 +18,11 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       p6-cdk-gha-role:
-        specifier: ^0.1.9
-        version: 0.1.9(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2)
+        specifier: ^0.1.10
+        version: 0.1.10(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2)
       p6-cdk-github-oidc-provider:
-        specifier: ^0.4.9
-        version: 0.4.9(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2)
+        specifier: ^0.4.10
+        version: 0.4.10(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2)
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -2436,15 +2436,15 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  p6-cdk-gha-role@0.1.9:
-    resolution: {integrity: sha512-QZHKLfR8JQZhAdRacSjjxrBVcTAfcw4cm1xmHjiiv3WnG0X7csbYZTvJd/FXcgMyuPbh9kAGy7hUPzr3mAc6Ww==}
+  p6-cdk-gha-role@0.1.10:
+    resolution: {integrity: sha512-OkgCjO+h66DbcUVfrfXaHy3QvuPY0j4UBTR7N9X+Gr/st+O7Rgb6NaoA9hnIxpXR+3FNZmmO//UBrNRDjccteA==}
     engines: {node: '>= 24.9.0'}
     peerDependencies:
       aws-cdk-lib: ^2.220.0
       constructs: ^10.4.2
 
-  p6-cdk-github-oidc-provider@0.4.9:
-    resolution: {integrity: sha512-df1kGF5e8TWHDniyvkLB5fhnfknsys+H6beOvcUXkcnpUZ0CyMXiizD+WhwPV1lCIke6BERB/JcycVxNJBYj3g==}
+  p6-cdk-github-oidc-provider@0.4.10:
+    resolution: {integrity: sha512-z9+Z1BHKWBlTSiM7kP/mwfxGD6vTe0uERRGTS5x1/19JLe36xVRf3OPviXu9gSkTnFki+LMgFTajBqyQlpvTtg==}
     engines: {node: '>= 24.9.0'}
     peerDependencies:
       aws-cdk-lib: ^2.220.0
@@ -2936,14 +2936,14 @@ packages:
   undici-types@7.14.0:
     resolution: {integrity: sha512-QQiYxHuyZ9gQUIrmPo3IA+hUl4KYk8uSA7cHrcKd/l3p1OTpZcM0Tbp9x7FAtXdAYhlasd60ncPpgu6ihG6TOA==}
 
-  unist-util-is@6.0.0:
-    resolution: {integrity: sha512-2qCTHimwdxLfz+YzdGfkqNlH0tLi9xjTnHddPmJwtIG9MGsdbutfTc4P+haPD7l7Cjxf/WZj+we5qfVPvvxfYw==}
+  unist-util-is@6.0.1:
+    resolution: {integrity: sha512-LsiILbtBETkDz8I9p1dQ0uyRUWuaQzd/cuEeS1hoRSyW5E5XGmTzlwY1OrNzzakGowI9Dr/I8HVaw4hTtnxy8g==}
 
   unist-util-stringify-position@4.0.0:
     resolution: {integrity: sha512-0ASV06AAoKCDkS2+xw5RXJywruurpbC4JZSm7nr7MOt1ojAzvyyaO+UxZf18j8FCF6kmzCZKcAgN/yu2gm2XgQ==}
 
-  unist-util-visit-parents@6.0.1:
-    resolution: {integrity: sha512-L/PqWzfTP9lzzEa6CKs0k2nARxTdZduw3zyh8d2NVBnsyvHjSX4TWse388YrrQKbvI8w20fGjGlhgT96WwKykw==}
+  unist-util-visit-parents@6.0.2:
+    resolution: {integrity: sha512-goh1s1TBrqSqukSc8wrjwWhL0hiJxgA8m4kFxGlQ+8FYQ3C/m11FcTs4YYem7V664AhHVvgoQLk890Ssdsr2IQ==}
 
   unist-util-visit@5.0.0:
     resolution: {integrity: sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==}
@@ -5645,8 +5645,8 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
       escape-string-regexp: 5.0.0
-      unist-util-is: 6.0.0
-      unist-util-visit-parents: 6.0.1
+      unist-util-is: 6.0.1
+      unist-util-visit-parents: 6.0.2
 
   mdast-util-from-markdown@2.0.2:
     dependencies:
@@ -5736,7 +5736,7 @@ snapshots:
   mdast-util-phrasing@4.1.0:
     dependencies:
       '@types/mdast': 4.0.4
-      unist-util-is: 6.0.0
+      unist-util-is: 6.0.1
 
   mdast-util-to-markdown@2.1.2:
     dependencies:
@@ -6086,12 +6086,12 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  p6-cdk-gha-role@0.1.9(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2):
+  p6-cdk-gha-role@0.1.10(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2):
     dependencies:
       aws-cdk-lib: 2.220.0(constructs@10.4.2)
       constructs: 10.4.2
 
-  p6-cdk-github-oidc-provider@0.4.9(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2):
+  p6-cdk-github-oidc-provider@0.4.10(aws-cdk-lib@2.220.0(constructs@10.4.2))(constructs@10.4.2):
     dependencies:
       aws-cdk-lib: 2.220.0(constructs@10.4.2)
       constructs: 10.4.2
@@ -6596,7 +6596,7 @@ snapshots:
 
   undici-types@7.14.0: {}
 
-  unist-util-is@6.0.0:
+  unist-util-is@6.0.1:
     dependencies:
       '@types/unist': 3.0.3
 
@@ -6604,16 +6604,16 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  unist-util-visit-parents@6.0.1:
+  unist-util-visit-parents@6.0.2:
     dependencies:
       '@types/unist': 3.0.3
-      unist-util-is: 6.0.0
+      unist-util-is: 6.0.1
 
   unist-util-visit@5.0.0:
     dependencies:
       '@types/unist': 3.0.3
-      unist-util-is: 6.0.0
-      unist-util-visit-parents: 6.0.1
+      unist-util-is: 6.0.1
+      unist-util-visit-parents: 6.0.2
 
   unrs-resolver@1.11.1:
     dependencies:
