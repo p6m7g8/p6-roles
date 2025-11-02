@@ -18,11 +18,11 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       p6-cdk-gha-role:
-        specifier: ^0.1.22
-        version: 0.1.22(aws-cdk-lib@2.221.1(constructs@10.4.2))(constructs@10.4.2)
+        specifier: ^0.1.23
+        version: 0.1.23(aws-cdk-lib@2.221.1(constructs@10.4.2))(constructs@10.4.2)
       p6-cdk-github-oidc-provider:
-        specifier: ^0.4.22
-        version: 0.4.22(aws-cdk-lib@2.221.1(constructs@10.4.2))(constructs@10.4.2)
+        specifier: ^0.4.23
+        version: 0.4.23(aws-cdk-lib@2.221.1(constructs@10.4.2))(constructs@10.4.2)
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -1040,8 +1040,8 @@ packages:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
 
-  caniuse-lite@1.0.30001752:
-    resolution: {integrity: sha512-vKUk7beoukxE47P5gcVNKkDRzXdVofotshHwfR9vmpeFKxmI5PBpgOMC18LUJUA/DvJ70Y7RveasIBraqsyO/g==}
+  caniuse-lite@1.0.30001753:
+    resolution: {integrity: sha512-Bj5H35MD/ebaOV4iDLqPEtiliTN29qkGtEHCwawWn4cYm+bPJM2NsaP30vtZcnERClMzp52J4+aw2UNbK4o+zw==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -2439,15 +2439,15 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  p6-cdk-gha-role@0.1.22:
-    resolution: {integrity: sha512-Xm125n5z0iywnoKQ0CX+ocaEWrVRXdLVJBJSsmSsQ3j4G2PQfmirssQZCiQ3Bc+1jrvj28x70fuTVgi5WcaZBQ==}
+  p6-cdk-gha-role@0.1.23:
+    resolution: {integrity: sha512-I4Evdj1d4Toqqb84WjBP2KtbU+dBOeKqbAxqMTKsz9x/Omci49PX+yVghsGVUiitqx05oP2RcNK9+cTEq6bqWg==}
     engines: {node: '>= 24.9.0'}
     peerDependencies:
       aws-cdk-lib: ^2.220.0
       constructs: ^10.4.2
 
-  p6-cdk-github-oidc-provider@0.4.22:
-    resolution: {integrity: sha512-HF1w4d2hS/i+g/ymmsAsDtdJQaiCT9Zkp3a5Uym0L6uP1O/7NL1B6ILNRg4jz2wtipHRC6UH/ucNUpgRbRWnTA==}
+  p6-cdk-github-oidc-provider@0.4.23:
+    resolution: {integrity: sha512-WX4amADIIED5ldwsn+ZXB3THRkB1GXoCgNDoSPOE4WVI47HjEowW2Y+IZydOLogowUk12EsJXBzGmNDU+sz6wQ==}
     engines: {node: '>= 24.9.0'}
     peerDependencies:
       aws-cdk-lib: ^2.220.0
@@ -4190,7 +4190,7 @@ snapshots:
   browserslist@4.27.0:
     dependencies:
       baseline-browser-mapping: 2.8.23
-      caniuse-lite: 1.0.30001752
+      caniuse-lite: 1.0.30001753
       electron-to-chromium: 1.5.244
       node-releases: 2.0.27
       update-browserslist-db: 1.1.4(browserslist@4.27.0)
@@ -4232,7 +4232,7 @@ snapshots:
 
   camelcase@6.3.0: {}
 
-  caniuse-lite@1.0.30001752: {}
+  caniuse-lite@1.0.30001753: {}
 
   ccount@2.0.1: {}
 
@@ -6092,12 +6092,12 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  p6-cdk-gha-role@0.1.22(aws-cdk-lib@2.221.1(constructs@10.4.2))(constructs@10.4.2):
+  p6-cdk-gha-role@0.1.23(aws-cdk-lib@2.221.1(constructs@10.4.2))(constructs@10.4.2):
     dependencies:
       aws-cdk-lib: 2.221.1(constructs@10.4.2)
       constructs: 10.4.2
 
-  p6-cdk-github-oidc-provider@0.4.22(aws-cdk-lib@2.221.1(constructs@10.4.2))(constructs@10.4.2):
+  p6-cdk-github-oidc-provider@0.4.23(aws-cdk-lib@2.221.1(constructs@10.4.2))(constructs@10.4.2):
     dependencies:
       aws-cdk-lib: 2.221.1(constructs@10.4.2)
       constructs: 10.4.2
