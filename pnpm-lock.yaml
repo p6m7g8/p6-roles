@@ -15,14 +15,14 @@ importers:
         specifier: ^10.4.3
         version: 10.4.3
       js-yaml:
-        specifier: ^4.1.0
-        version: 4.1.0
+        specifier: ^4.1.1
+        version: 4.1.1
       p6-cdk-gha-role:
-        specifier: ^0.1.28
-        version: 0.1.28(aws-cdk-lib@2.223.0(constructs@10.4.3))(constructs@10.4.3)
+        specifier: ^0.1.29
+        version: 0.1.29(aws-cdk-lib@2.223.0(constructs@10.4.3))(constructs@10.4.3)
       p6-cdk-github-oidc-provider:
-        specifier: ^0.4.28
-        version: 0.4.28(aws-cdk-lib@2.223.0(constructs@10.4.3))(constructs@10.4.3)
+        specifier: ^0.4.29
+        version: 0.4.29(aws-cdk-lib@2.223.0(constructs@10.4.3))(constructs@10.4.3)
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -567,8 +567,8 @@ packages:
     peerDependencies:
       eslint: '>=9.0.0'
 
-  '@tsconfig/node10@1.0.11':
-    resolution: {integrity: sha512-DcRjDCujK/kCk/cUe8Xz8ZSpm8mS3mNNpta+jGCA6USEDfktlNvm1+IuZ9eTcDbNk41BHwpHHeW+N1lKCz4zOw==}
+  '@tsconfig/node10@1.0.12':
+    resolution: {integrity: sha512-UCYBaeFvM11aU2y3YPZ//O5Rhj+xKyzy7mvcIoAjASbigy8mHMryP5cK7dgjlz2hWxh1g5pLw084E0a/wlUSFQ==}
 
   '@tsconfig/node12@1.0.11':
     resolution: {integrity: sha512-cqefuRsh12pWyGsIoBKJA9luFu3mRxCA+ORZvA4ktLSzIuCUtWVxGIuXigEwO5/ywWFMZ2QEGKWvkZG1zDMTag==}
@@ -972,8 +972,8 @@ packages:
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  baseline-browser-mapping@2.8.27:
-    resolution: {integrity: sha512-2CXFpkjVnY2FT+B6GrSYxzYf65BJWEqz5tIRHCvNsZZ2F3CmsCB37h8SpYgKG7y9C4YAeTipIPWG7EmFmhAeXA==}
+  baseline-browser-mapping@2.8.28:
+    resolution: {integrity: sha512-gYjt7OIqdM0PcttNYP2aVrr2G0bMALkBaoehD4BuRGjAOtipg0b6wHg1yNL+s5zSnLZZrGHOw4IrND8CD+3oIQ==}
     hasBin: true
 
   boolbase@1.0.0:
@@ -1376,8 +1376,8 @@ packages:
       '@typescript-eslint/parser':
         optional: true
 
-  eslint-plugin-jsdoc@61.2.0:
-    resolution: {integrity: sha512-Pky3YKWPOcDGi4TzBZlp/ENd+z443uVgIyZxzA9wVbfECjG1ptf7sB8gzSX4Z8dAtoD8d3d68jsLuAfxr+8qyQ==}
+  eslint-plugin-jsdoc@61.2.1:
+    resolution: {integrity: sha512-Htacti3dbkNm4rlp/Bk9lqhv+gi6US9jyN22yaJ42G6wbteiTbNLChQwi25jr/BN+NOzDWhZHvCDdrhX0F8dXQ==}
     engines: {node: '>=20.11.0'}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -2068,8 +2068,8 @@ packages:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
     hasBin: true
 
-  js-yaml@4.1.0:
-    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+  js-yaml@4.1.1:
+    resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
     hasBin: true
 
   jsdoc-type-pratt-parser@4.1.0:
@@ -2435,15 +2435,15 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  p6-cdk-gha-role@0.1.28:
-    resolution: {integrity: sha512-2kUpotE+I6rDznJtv7e1SYiRDasSK8kleEFCFgP0Ae0N4YY8TICii3ijc/egydsWVfbANVjMHddgt1LTU1nwTg==}
+  p6-cdk-gha-role@0.1.29:
+    resolution: {integrity: sha512-LArU9ZjRKqsnP4IkPZ2KoND1P+CLolblbsL+eGD5UbeqCxLBLdkvqg0TcDBjJfHDXNEOduW/RZubNBTIZ2qrQg==}
     engines: {node: '>= 24.9.0'}
     peerDependencies:
       aws-cdk-lib: ^2.220.0
       constructs: ^10.4.2
 
-  p6-cdk-github-oidc-provider@0.4.28:
-    resolution: {integrity: sha512-kkzV1gTgFdrjZzzcSImFHJWQq4gP9E0NPERdZYUaSsSa8e8LditKqRmxO2wpVj5W+r2Qj5u/gToCojyub7tO5w==}
+  p6-cdk-github-oidc-provider@0.4.29:
+    resolution: {integrity: sha512-pajL8TcIWYcujHy+4ShV6P/sPw8XnSx9Ps697LbNHzJpishUwpYrq8LGQw50O9lj29jTqaAGacxR0vixo5rQEw==}
     engines: {node: '>= 24.9.0'}
     peerDependencies:
       aws-cdk-lib: ^2.220.0
@@ -3086,7 +3086,7 @@ snapshots:
       eslint-plugin-antfu: 3.1.1(eslint@9.39.1)
       eslint-plugin-command: 3.3.1(eslint@9.39.1)
       eslint-plugin-import-lite: 0.3.0(eslint@9.39.1)(typescript@5.9.3)
-      eslint-plugin-jsdoc: 61.2.0(eslint@9.39.1)
+      eslint-plugin-jsdoc: 61.2.1(eslint@9.39.1)
       eslint-plugin-jsonc: 2.21.0(eslint@9.39.1)
       eslint-plugin-n: 17.23.1(eslint@9.39.1)(typescript@5.9.3)
       eslint-plugin-no-only-tests: 3.3.0
@@ -3405,7 +3405,7 @@ snapshots:
       globals: 14.0.0
       ignore: 5.3.2
       import-fresh: 3.3.1
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       minimatch: 3.1.2
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
@@ -3715,7 +3715,7 @@ snapshots:
       estraverse: 5.3.0
       picomatch: 4.0.3
 
-  '@tsconfig/node10@1.0.11': {}
+  '@tsconfig/node10@1.0.12': {}
 
   '@tsconfig/node12@1.0.11': {}
 
@@ -4163,7 +4163,7 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  baseline-browser-mapping@2.8.27: {}
+  baseline-browser-mapping@2.8.28: {}
 
   boolbase@1.0.0: {}
 
@@ -4182,7 +4182,7 @@ snapshots:
 
   browserslist@4.28.0:
     dependencies:
-      baseline-browser-mapping: 2.8.27
+      baseline-browser-mapping: 2.8.28
       caniuse-lite: 1.0.30001754
       electron-to-chromium: 1.5.250
       node-releases: 2.0.27
@@ -4575,7 +4575,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jsdoc@61.2.0(eslint@9.39.1):
+  eslint-plugin-jsdoc@61.2.1(eslint@9.39.1):
     dependencies:
       '@es-joy/jsdoccomment': 0.76.0
       '@es-joy/resolve.exports': 1.2.0
@@ -5550,7 +5550,7 @@ snapshots:
       argparse: 1.0.10
       esprima: 4.0.1
 
-  js-yaml@4.1.0:
+  js-yaml@4.1.1:
     dependencies:
       argparse: 2.0.1
 
@@ -6085,12 +6085,12 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  p6-cdk-gha-role@0.1.28(aws-cdk-lib@2.223.0(constructs@10.4.3))(constructs@10.4.3):
+  p6-cdk-gha-role@0.1.29(aws-cdk-lib@2.223.0(constructs@10.4.3))(constructs@10.4.3):
     dependencies:
       aws-cdk-lib: 2.223.0(constructs@10.4.3)
       constructs: 10.4.3
 
-  p6-cdk-github-oidc-provider@0.4.28(aws-cdk-lib@2.223.0(constructs@10.4.3))(constructs@10.4.3):
+  p6-cdk-github-oidc-provider@0.4.29(aws-cdk-lib@2.223.0(constructs@10.4.3))(constructs@10.4.3):
     dependencies:
       aws-cdk-lib: 2.223.0(constructs@10.4.3)
       constructs: 10.4.3
@@ -6516,7 +6516,7 @@ snapshots:
   ts-node@10.9.2(@types/node@24.10.1)(typescript@5.9.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
-      '@tsconfig/node10': 1.0.11
+      '@tsconfig/node10': 1.0.12
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
