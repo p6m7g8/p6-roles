@@ -18,11 +18,11 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1
       p6-cdk-gha-role:
-        specifier: ^0.1.31
-        version: 0.1.31(aws-cdk-lib@2.225.0(constructs@10.4.3))(constructs@10.4.3)
+        specifier: ^0.1.32
+        version: 0.1.32(aws-cdk-lib@2.225.0(constructs@10.4.3))(constructs@10.4.3)
       p6-cdk-github-oidc-provider:
-        specifier: ^0.4.31
-        version: 0.4.31(aws-cdk-lib@2.225.0(constructs@10.4.3))(constructs@10.4.3)
+        specifier: ^0.4.32
+        version: 0.4.32(aws-cdk-lib@2.225.0(constructs@10.4.3))(constructs@10.4.3)
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -972,8 +972,8 @@ packages:
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  baseline-browser-mapping@2.8.29:
-    resolution: {integrity: sha512-sXdt2elaVnhpDNRDz+1BDx1JQoJRuNk7oVlAlbGiFkLikHCAQiccexF/9e91zVi6RCgqspl04aP+6Cnl9zRLrA==}
+  baseline-browser-mapping@2.8.30:
+    resolution: {integrity: sha512-aTUKW4ptQhS64+v2d6IkPzymEzzhw+G0bA1g3uBRV3+ntkH+svttKseW5IOR4Ed6NUVKqnY7qT3dKvzQ7io4AA==}
     hasBin: true
 
   boolbase@1.0.0:
@@ -1204,8 +1204,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.256:
-    resolution: {integrity: sha512-uqYq1IQhpXXLX+HgiXdyOZml7spy4xfy42yPxcCCRjswp0fYM2X+JwCON07lqnpLEGVCj739B7Yr+FngmHBMEQ==}
+  electron-to-chromium@1.5.258:
+    resolution: {integrity: sha512-rHUggNV5jKQ0sSdWwlaRDkFc3/rRJIVnOSe9yR4zrR07m3ZxhP4N27Hlg8VeJGGYgFTxK5NqDmWI4DSH72vIJg==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -2435,15 +2435,15 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  p6-cdk-gha-role@0.1.31:
-    resolution: {integrity: sha512-dWs9CmCdANG5Lltj+5sssXmXaInYSBIXbYsOoXGV6EAh0xU6ytrrHuMgOYuYDICOr/moOK6FHTCrDJd6H+TIEA==}
+  p6-cdk-gha-role@0.1.32:
+    resolution: {integrity: sha512-OCGrYmMM7Ldh25tyBx9SyOB8yhB9C66aVLDfzpINuXLFNcmvnyhZ4lbmyMOb3PlW6HVgXvqN8cTOkAIooGbOQQ==}
     engines: {node: '>= 24.9.0'}
     peerDependencies:
       aws-cdk-lib: ^2.220.0
       constructs: ^10.4.2
 
-  p6-cdk-github-oidc-provider@0.4.31:
-    resolution: {integrity: sha512-UdTX/yBA2vDxDolLcFymY0JOgHM8Cg4JuXZAEzUSYiXIUv2w9Ku6XgzJyxG8CaUrShTNGj8wDIjTmWgv7pZxgA==}
+  p6-cdk-github-oidc-provider@0.4.32:
+    resolution: {integrity: sha512-J097sbzsGAxUhWVqZTqJqWWkqqGg/T3ewB0kXX8Yw7uxXYG/6/jqqDZyFN/yBnkVwGhjClP4y4N+W6R2vSieow==}
     engines: {node: '>= 24.9.0'}
     peerDependencies:
       aws-cdk-lib: ^2.220.0
@@ -4163,7 +4163,7 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  baseline-browser-mapping@2.8.29: {}
+  baseline-browser-mapping@2.8.30: {}
 
   boolbase@1.0.0: {}
 
@@ -4182,9 +4182,9 @@ snapshots:
 
   browserslist@4.28.0:
     dependencies:
-      baseline-browser-mapping: 2.8.29
+      baseline-browser-mapping: 2.8.30
       caniuse-lite: 1.0.30001756
-      electron-to-chromium: 1.5.256
+      electron-to-chromium: 1.5.258
       node-releases: 2.0.27
       update-browserslist-db: 1.1.4(browserslist@4.28.0)
 
@@ -4362,7 +4362,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.256: {}
+  electron-to-chromium@1.5.258: {}
 
   emittery@0.13.1: {}
 
@@ -6085,12 +6085,12 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  p6-cdk-gha-role@0.1.31(aws-cdk-lib@2.225.0(constructs@10.4.3))(constructs@10.4.3):
+  p6-cdk-gha-role@0.1.32(aws-cdk-lib@2.225.0(constructs@10.4.3))(constructs@10.4.3):
     dependencies:
       aws-cdk-lib: 2.225.0(constructs@10.4.3)
       constructs: 10.4.3
 
-  p6-cdk-github-oidc-provider@0.4.31(aws-cdk-lib@2.225.0(constructs@10.4.3))(constructs@10.4.3):
+  p6-cdk-github-oidc-provider@0.4.32(aws-cdk-lib@2.225.0(constructs@10.4.3))(constructs@10.4.3):
     dependencies:
       aws-cdk-lib: 2.225.0(constructs@10.4.3)
       constructs: 10.4.3
