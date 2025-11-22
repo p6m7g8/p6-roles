@@ -18,11 +18,11 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1
       p6-cdk-gha-role:
-        specifier: ^0.1.32
-        version: 0.1.32(aws-cdk-lib@2.227.0(constructs@10.4.3))(constructs@10.4.3)
+        specifier: ^0.1.33
+        version: 0.1.33(aws-cdk-lib@2.227.0(constructs@10.4.3))(constructs@10.4.3)
       p6-cdk-github-oidc-provider:
-        specifier: ^0.4.32
-        version: 0.4.32(aws-cdk-lib@2.227.0(constructs@10.4.3))(constructs@10.4.3)
+        specifier: ^0.4.33
+        version: 0.4.33(aws-cdk-lib@2.227.0(constructs@10.4.3))(constructs@10.4.3)
       source-map-support:
         specifier: ^0.5.21
         version: 0.5.21
@@ -1436,8 +1436,8 @@ packages:
       '@typescript-eslint/eslint-plugin':
         optional: true
 
-  eslint-plugin-vue@10.5.1:
-    resolution: {integrity: sha512-SbR9ZBUFKgvWAbq3RrdCtWaW0IKm6wwUiApxf3BVTNfqUIo4IQQmreMg2iHFJJ6C/0wss3LXURBJ1OwS/MhFcQ==}
+  eslint-plugin-vue@10.6.0:
+    resolution: {integrity: sha512-TsoFluWxOpsJlE/l2jJygLQLWBPJ3Qdkesv7tBIunICbTcG0dS1/NBw/Ol4tJw5kHWlAVds4lUmC29/vlPUcEQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       '@stylistic/eslint-plugin': ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
@@ -2435,15 +2435,15 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  p6-cdk-gha-role@0.1.32:
-    resolution: {integrity: sha512-OCGrYmMM7Ldh25tyBx9SyOB8yhB9C66aVLDfzpINuXLFNcmvnyhZ4lbmyMOb3PlW6HVgXvqN8cTOkAIooGbOQQ==}
+  p6-cdk-gha-role@0.1.33:
+    resolution: {integrity: sha512-2cV5V1Y45SeYwbQWp3DgEFlyMIkHXILjQXEiYwH3F51WMySwzyq5cyfGTLp5+erV9OuTqKj36Uss6tksadVP+w==}
     engines: {node: '>= 24.9.0'}
     peerDependencies:
       aws-cdk-lib: ^2.220.0
       constructs: ^10.4.2
 
-  p6-cdk-github-oidc-provider@0.4.32:
-    resolution: {integrity: sha512-J097sbzsGAxUhWVqZTqJqWWkqqGg/T3ewB0kXX8Yw7uxXYG/6/jqqDZyFN/yBnkVwGhjClP4y4N+W6R2vSieow==}
+  p6-cdk-github-oidc-provider@0.4.33:
+    resolution: {integrity: sha512-F4H4n6ikn/7mtZITwlC0Ym/wnN4psGXK07p5cvwQo/N7ZBMvl98fu3ONqJOmhR2DZQaibh+XHiOgtYmtuZcTUQ==}
     engines: {node: '>= 24.9.0'}
     peerDependencies:
       aws-cdk-lib: ^2.220.0
@@ -2531,8 +2531,8 @@ packages:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
     engines: {node: '>= 0.4'}
 
-  postcss-selector-parser@6.1.2:
-    resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
+  postcss-selector-parser@7.1.0:
+    resolution: {integrity: sha512-8sLjZwK0R+JlxlYcTuVnyT2v+htpdrjDOKuMcOVdYjt52Lh8hWRYpxBPoKx/Zg+bcjc3wx6fmQevMmUztS/ccA==}
     engines: {node: '>=4'}
 
   postcss@8.5.6:
@@ -3096,7 +3096,7 @@ snapshots:
       eslint-plugin-toml: 0.12.0(eslint@9.39.1)
       eslint-plugin-unicorn: 62.0.0(eslint@9.39.1)
       eslint-plugin-unused-imports: 4.3.0(@typescript-eslint/eslint-plugin@8.47.0(@typescript-eslint/parser@8.47.0(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)
-      eslint-plugin-vue: 10.5.1(@stylistic/eslint-plugin@5.6.1(eslint@9.39.1))(@typescript-eslint/parser@8.47.0(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)(vue-eslint-parser@10.2.0(eslint@9.39.1))
+      eslint-plugin-vue: 10.6.0(@stylistic/eslint-plugin@5.6.1(eslint@9.39.1))(@typescript-eslint/parser@8.47.0(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)(vue-eslint-parser@10.2.0(eslint@9.39.1))
       eslint-plugin-yml: 1.19.0(eslint@9.39.1)
       eslint-processor-vue-blocks: 2.0.0(@vue/compiler-sfc@3.5.12)(eslint@9.39.1)
       globals: 16.5.0
@@ -4696,13 +4696,13 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 8.47.0(@typescript-eslint/parser@8.47.0(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)(typescript@5.9.3)
 
-  eslint-plugin-vue@10.5.1(@stylistic/eslint-plugin@5.6.1(eslint@9.39.1))(@typescript-eslint/parser@8.47.0(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)(vue-eslint-parser@10.2.0(eslint@9.39.1)):
+  eslint-plugin-vue@10.6.0(@stylistic/eslint-plugin@5.6.1(eslint@9.39.1))(@typescript-eslint/parser@8.47.0(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)(vue-eslint-parser@10.2.0(eslint@9.39.1)):
     dependencies:
       '@eslint-community/eslint-utils': 4.9.0(eslint@9.39.1)
       eslint: 9.39.1
       natural-compare: 1.4.0
       nth-check: 2.1.1
-      postcss-selector-parser: 6.1.2
+      postcss-selector-parser: 7.1.0
       semver: 7.7.3
       vue-eslint-parser: 10.2.0(eslint@9.39.1)
       xml-name-validator: 4.0.0
@@ -6085,12 +6085,12 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  p6-cdk-gha-role@0.1.32(aws-cdk-lib@2.227.0(constructs@10.4.3))(constructs@10.4.3):
+  p6-cdk-gha-role@0.1.33(aws-cdk-lib@2.227.0(constructs@10.4.3))(constructs@10.4.3):
     dependencies:
       aws-cdk-lib: 2.227.0(constructs@10.4.3)
       constructs: 10.4.3
 
-  p6-cdk-github-oidc-provider@0.4.32(aws-cdk-lib@2.227.0(constructs@10.4.3))(constructs@10.4.3):
+  p6-cdk-github-oidc-provider@0.4.33(aws-cdk-lib@2.227.0(constructs@10.4.3))(constructs@10.4.3):
     dependencies:
       aws-cdk-lib: 2.227.0(constructs@10.4.3)
       constructs: 10.4.3
@@ -6165,7 +6165,7 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-selector-parser@6.1.2:
+  postcss-selector-parser@7.1.0:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
