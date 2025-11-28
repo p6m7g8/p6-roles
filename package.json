@@ -43,8 +43,8 @@
     "aws-cdk-lib": "2.230.0",
     "constructs": "^10.4.3",
     "js-yaml": "^4.1.1",
-    "p6-cdk-gha-role": "^0.1.35",
-    "p6-cdk-github-oidc-provider": "^0.4.35",
+    "p6-cdk-gha-role": "^0.1.36",
+    "p6-cdk-github-oidc-provider": "^0.4.36",
     "source-map-support": "^0.5.21"
   },
   "keywords": [
